@@ -1,14 +1,17 @@
+// src/App.tsx
 import React from 'react';
-import CurrencySelector from './components/CurrencySelector';
-import PriceDisplay from './components/PriceDisplay';
-import PriceChart from './components/PriceChart';
+import Header from './components/Header';
+import MainContent from './components/MainContent';
+import NavBar from './components/NavBar';
+import CryptoList from './components/CryptoList';
 
 function App() {
   return (
-    <div className='App'>
-      <CurrencySelector />
-      <PriceDisplay currency='BTC' price={10000} /> {/* ダミーデーター */}
-      <PriceChart />
+    <div>
+      <Header />
+      <MainContent />
+      <NavBar />
+      <CryptoList />
     </div>
   );
 }
